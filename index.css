@@ -1,0 +1,15 @@
+*{padding:0;margin:0;box-sizing:border-box}
+.container,.container .circle,.container .controls,.container .in-circle,.container .title,body{display:flex;justify-content:center;align-items:center}
+body{height:100vh;background-color:#483d8b}
+.container{width:600px;flex-direction:column;background-color:#fff;border-radius:10px}
+.container .circle{position:relative;width:280px;height:280px;border-radius:50%;background-color:#979191;margin:20px auto}
+.container .in-circle{position:absolute;width:245px;height:245px;background-color:#fff;border-radius:50%;font-size:30px;font-weight:bolder}
+.container .title{width:280px;font-size:20px;font-weight:bolder;font-family:tahoma;text-transform:capitalize;margin:10px auto}
+.container .controls{flex-direction:column;width:200px;margin:10px auto}
+.container .input{width:200px;height:25px;outline:0;text-align:center;border-radius:5px;border:1px solid #a110a1;font-weight:bolder}
+.container .btn{width:200px;height:25px;border:none;background-color:#a110a1;color:#fff;font-size:18px;text-transform:capitalize;margin-top:10px;border-radius:5px;cursor:pointer}
+.container .pro{position:absolute;width:280px;height:280px;border-radius:50%;background:conic-gradient(#a110a1 0deg,#979191 0deg)}
+.container .true{width:100px;height:100px;background:0 0}
+@media screen and (max-width:640px){
+.container{width:350px}
+}

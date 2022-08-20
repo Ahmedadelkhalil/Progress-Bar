@@ -1,0 +1,96 @@
+%display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  height: 100vh;
+  background-color: darkslateblue;
+  @extend %display;
+}
+.container {
+  width: 600px;
+  flex-direction: column;
+  @extend %display;
+  background-color: #fff;
+  border-radius: 10px;
+  .circle {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-color: #979191;
+    margin: 20px auto;
+    @extend %display;
+  }
+  .in-circle {
+    position: absolute;
+    width: 245px;
+    height: 245px;
+    background-color: #fff;
+    border-radius: 50%;
+    font: {
+      size: 30px;
+      weight: bolder;
+    }
+    @extend %display;
+  }
+  .title {
+    width: 280px;
+    font: {
+      size: 20px;
+      weight: bolder;
+      family: tahoma;
+    }
+    text-transform: capitalize;
+    margin: 10px auto;
+    @extend %display;
+  }
+  .controls {
+    @extend %display;
+    flex-direction: column;
+    width: 200px;
+    margin: 10px auto;
+  }
+  .input {
+    width: 200px;
+    height: 25px;
+    outline: none;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgb(161, 16, 161);
+    font: {
+      weight: bolder;
+    }
+  }
+  .btn {
+    width: 200px;
+    height: 25px;
+    border: none;
+    background-color: rgb(161, 16, 161);
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .pro {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: conic-gradient(rgb(161, 16, 161) 0deg, #979191 0deg);
+  }
+  .true {
+    width: 100px;
+    height: 100px;
+    background: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    width: 350px;
+  }
+}
