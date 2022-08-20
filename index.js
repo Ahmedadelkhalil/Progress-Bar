@@ -6,7 +6,7 @@ let btn = document.querySelector(".btn");
 let i = 1;
 
 btn.addEventListener("click", () => {
-  if (inp.value !== "") {
+  if (inp.value !== "" && inp.value < 361) {
     let holder = setInterval(() => {
       if (i < inp.value) {
         circleValue.textContent = `${i++ + 1}%`;
